@@ -1,0 +1,974 @@
+/* 1- COMMON STYLES
+2- GENERAL STYLES
+3- SECTIONS  
+  3.0  HEADER
+  3.1  HOME SECTION 
+  3.2  welcome SECTION 
+  3.3  featured SECTION .
+  3.4  OFFER SECTION .
+  3.5  choos us SECTION .
+  3.6  NUMBERS SECTION .
+  3.7  PRICING SECTION .
+  3.8  football SECTION .
+  3.9  TEAM SECTION 
+  3.10 recent SECTION 
+  3.11 FOOTER SECTION */
+/* 1- COMMON STYLES.......................................................................................... */
+.overlay_common {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgba(0,0,0,0.7)
+}
+/* 2- GENERAL STYLES........................................................................................ */
+*  {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .cont_general {
+    width:80%;
+    margin: auto;
+    }
+    a {
+       text-decoration: none;
+    }
+    .section{
+        margin:100px auto; 
+    }
+    .section .header{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .section .line{
+        display: block;
+        width: 80px;
+        height: 4px;
+        background-color: blue;
+        margin: 10px auto ;
+    } 
+    /* 3.0 header section........................................................................................... */
+body{
+    background-image: url(../pictures/image22.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 650px;
+}
+.all1{
+    width: 100%;
+}
+.rel{
+    position: relative;
+    height: 645px;
+    width: 100%;
+}
+.cont_general .img1{
+    height:50px;
+    width: 60px;
+    float: left; 
+    display: block;
+}
+.li1 {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 7px;    
+}
+
+.ul1{
+    float: right;
+    margin-top: 10px;
+}
+a{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ch1 .ul1 .po .spheader{
+    position: relative;
+    display: block;
+    width: 58px;
+    height: 3px;
+}
+.ch1 .ul1 .sv .spheader{
+    position: relative;
+    display: block;
+    width: 58px;
+    height: 3px;
+}
+.ch1 .ul1 .ct .spheader{
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 3px;
+}
+.ch1 .ul1 .bg .spheader{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 3px;
+}
+.bg{
+    position: relative;
+}
+.inner{
+    height: 50px;
+    width: 80px;
+    margin-top: 10px;
+    padding-top: 15px;
+    background-color:blue;
+    position: absolute;
+    visibility: hidden;
+    color: white;
+    opacity: 0;
+    z-index: 100;
+}
+.bg:hover .inner{
+visibility: visible;
+opacity: 1;
+z-index: 100;
+}
+.ch1 .ul1 .spheader{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 3px;
+}
+.ch1 .ul1 .spheader::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width:0px;
+    height:100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+opacity: 0;
+transition: 2s;}
+.ch1 .ul1 .li1:hover .spheader::after{
+width:100%;
+height: 100%;
+visibility: visible;
+background-color: #0954ec;
+opacity: 1;
+transition: 0.5s;
+}
+.ul1 .ll .lll{
+    position: fixed;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: blue; 
+} 
+.ch1{
+    background-color: black;
+    position: fixed;
+    height: 50px;
+    width:100%;
+    top: 0px;
+    left: 0px;
+    /* in order to begin from (0,0) to prevent any block place this first block */
+    opacity: 0.7;
+    z-index: 50;
+}
+.clearfix1{
+    overflow: hidden;
+}
+/* /header */
+/* 3.1 home............................................................................................. */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.ch22{
+    position: relative;
+    height:600px ;
+}
+.ch2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 800px;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+}
+.ch2 h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+}
+.ch2 p{
+    font-size: 16px;
+    line-height: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+}
+.bu1{
+    background-color:rgba(239,239,239,255);
+    border: 2px solid rgba(208,208,208,255);
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+.bu1:hover{
+    background-color: rgba(208,208,208,255);
+}
+.bu2{
+    background-color:rgba(0,0,255,255);
+    border: 2px solid rgba(4,4,184,255);
+    border-radius: 5px;
+    margin-left: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: white;
+}
+.bu2:hover{
+    background-color: rgba(4,4,184,255);
+}
+/* /home */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 3.2 welcom section ........................................................................... */
+.all2{
+    width: 100%;}
+.f{
+    height: 400px;
+    /* margin-top: 300px; */
+}
+.f .final{
+   width:90%;
+   margin: auto;
+ }   
+ .ch4{
+     position: relative;
+    width: 28%;
+    border: 2px solid rgba(221,221,221,255) ;
+    text-align: center;
+    float: left;
+   padding: 30px 15px;
+   margin: 0px 20px;
+}
+.ch4 h2{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ch4 p{
+    color:rgba(167,167,167,255);
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.ch4 .ach{
+    color: rgba(142,153,210,255);
+text-transform: capitalize;
+}
+.ch4 .fa-2x{
+    color: #6094ff;
+    margin-bottom:10px ;
+}
+.ch4:after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.ch4:hover:after{
+    background-color:rgba(51,51,51,255);
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.ch4:hover h2{
+    color: white;
+}
+.ch4:hover p{
+    color:rgba(113,108,109,255);
+}
+.ch4:hover .ach{
+    color: rgb(40, 89, 224);
+}
+
+.clearfix{
+    overflow: hidden;
+}
+/* /welcome */
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 3.3 featured section............................................................... */
+.eefinal{
+    background-color: rgba(232,231,234,255);
+    width: 100%;
+    padding: 30px 0px;
+}
+.fff{ 
+    position:relative ;
+    height: 600px;
+width: 100%;
+}
+.ff{
+width:880px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+} 
+.f1 {
+    height: 250px;
+    width: 250px;
+    background-image: url(../pictures/image3.jpg);
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    float: left;
+    position: relative;
+    margin: 20px 20px;
+ }
+ 
+ .f1 .ft{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0,0,0,0.7);
+     text-align: center;
+     visibility: hidden;
+     opacity: 0;
+     scale: 0;
+     transition: opacity 1s;
+ }
+ .f1:hover .ft{
+     visibility:visible ;
+     opacity: 1;
+     transform: scale(1.2);
+ }
+.f1 .ft h2{
+    position: relative;
+    top: 0;
+    color: #6195ff;
+    text-transform: uppercase;
+    font-size: 15px;
+    top: 15px;
+    margin-top: 80px;
+    transition: top 1s ,opacity .5s;
+    transition-delay: 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+.f1 .ft p{
+    position: relative;
+    top: 0;
+    color: white;
+    text-transform: lowercase;
+    font-size: 20px;
+    opacity: 0;
+    top: 15px;
+    transition: top 1s ,opacity 0.5s;
+    transition-delay: 0.4s;
+    visibility: hidden;
+}
+.f1 .ft a{
+    position: relative;
+    top: 0;
+    display: inline-block;
+    background-color:#6195ff ;
+    color: #6240bf;
+    width: 40px;
+    height: 40px;
+    margin: 10px 2px;
+    line-height: 40px;
+    font-size: 20px;
+    opacity: 0;
+    top: 15px;
+    transition: top 1s ,opacity 0.5s;
+    transition-delay: 0.6s;
+    visibility: hidden;
+}
+.f1:hover .ft h2,
+    .f1:hover .ft p,
+    .f1:hover .ft a{
+        top: 0;
+ visibility: visible;
+ opacity: 1;
+    }
+ .clearf{
+     overflow: hidden;
+ }
+ /* /featured */
+ /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 3.4 offer section............................................................. */
+ .cleardl{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+}
+.dddl{
+    position:relative ;
+    height: 400px;
+width: 100%;
+}
+.ddl{
+width: 950px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.dl{
+    position: relative;
+    height: 170px; ;
+    width: 270px;
+    border: 2px solid rgba(194,194,194,255);
+    border-radius: 5px;
+    text-align: center;
+    float: left;
+    margin: 20px 20px;
+    padding: 30px 10px 30px 70px;
+}
+.dl h2{
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+.dl p{
+    
+    color:rgba(168,166,166,255);
+    font-size: 14px;
+    text-transform:capitalize;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 25px;
+}
+.dl a{
+text-decoration: none;
+text-transform: capitalize;
+}
+.dl::after{
+    position:absolute;
+    content: "";
+    width: 2px;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.dl:hover:after{
+   width: 100%;
+   height: 100%;
+    background-color:rgba(51,51,51,255);
+    transition: 0.5s;
+}
+.dl:hover h2{
+    color: white;
+}
+.dl:hover p{
+    color:rgba(113,108,109,255);
+}
+.dl:hover a{
+    color: rgb(59, 90, 228);
+}
+.dl .fa-2x{
+    position: absolute;
+    color:#6094ff ;
+    text-align: justify;
+    left: 15px;
+    top: 26px;
+}
+/* /offer */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 3.5 choose us section................................................................... */
+.total{
+    margin: auto;
+    position: relative;
+    width: 880px;
+    height: 830px; 
+}
+
+.topich {
+text-align: justify;
+position: absolute;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 200px;
+}
+ .topich span{
+    display: block;
+    height: 4px;
+    width: 50px;
+    position: absolute;
+background-color: blue;
+margin: 0px auto;
+top: 10%;
+} 
+.topich .pfir {
+    font-size: 15px;
+    color: #a4a6a9;
+     line-height: 23px;
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.topich .lipplibox{
+    float: left;
+    color: #a4a6a9;
+    line-height: 40px;
+}
+.topich .lipp .lipplibox .lippli{
+  display: block;
+    list-style-type: none;
+    color: #a4a6a9;
+    display:inline-block;
+ } 
+ 
+.topich .lipp .libuall{
+margin-left: 630px;
+float: left;
+color: rgba(170,170,170,255);
+font-size: 35px;
+} 
+.topich .lipp .libuall .libu{
+    float: left;
+    margin: 0px 10px;
+}
+.topich .lipp .libuall .chooseus{
+    color:rgba(95,149,248,255);
+}
+.topich .lipp .libuall .libu:hover{
+    color:rgba(95,149,248,255);
+}
+.topich h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: black;
+    float:left;
+}
+.imgtopic{
+height: 350px;
+width: 420px;
+display: inline;
+float: right;
+margin-top: 25px;
+}
+.lipplibox .fa-fw{
+    display:block ;
+    color:rgba(97,149,254,255);
+    left: 0;
+}
+.cleartopicimg{
+    overflow: hidden;
+}
+/* /choose us */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 3.6 nummber section...................................................................... */
+.numbers{
+    position: relative;
+    background-image: url(../pictures/eee.jpeg);
+    height:350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.numbers-items{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     width: 80%;
+}
+.number-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.fa-2x{
+    color: #6094ff;
+    margin-bottom: 15px;
+}
+.number-item-title{
+    color: white;
+    line-height: 20px;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.number-item .number-item-text{
+    color: white;
+    line-height: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    overflow: hidden;
+}
+/* /nummber */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 3.7 pricing section.............................................................. */
+.allprice{
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    background-color: rgba(232,232,232,255);  
+    padding-top: 50px;
+}
+.cont_general .price{
+    position: relative;
+    width: 28%;
+    border: 2px solid rgba(208,208,208,255);
+text-align: center;
+margin: 0px 20px;
+padding: 30px 15px;
+float: left;
+}
+.cont_general .price::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0px;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+.cont_general .price:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.cont_general .price:hover .priceh2{
+    color: red;
+}
+.cont_general .price:hover .mon{
+    color: red;
+}
+.cont_general .price:hover .pricehh2{
+    color: red;
+}
+.cont_general .priceh2{
+text-transform: uppercase;
+padding-top: 20px;
+font-size: 17px;
+color: #a8a4aa;
+font-family:'varela round' , sans-serif;
+}
+.circle{
+    height: 111px;
+    width: 111px;
+    border: 2px solid rgba(105,154,254,255);
+    border-radius: 50%;
+    text-align: center;
+    color: black;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px auto;
+}
+.circle .mon{
+font-size: 18px;
+text-transform: uppercase;
+}
+.circle .pricehh2{
+    padding-top: 10px;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.cont_general .pricing{
+list-style: none;
+color: #a8a4aa;
+line-height: 30px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.price .buprice{
+    color: black;
+    border-color: #6094ff;
+    height:30px ;
+    width: 130px;
+    margin-top: 20px;
+}
+.pricecont{
+overflow: hidden;   
+}
+/* /pricing */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 3.8 football section........................................................... */
+.alll{
+    width: 100%;
+    margin: auto; 
+    overflow: hidden;
+} 
+.hugpic{
+    position: relative;
+    height: 350px;
+    width: 100%;
+background-image: url(../pictures/zzz.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+.contenthugpic{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   width: 1000px;
+}
+.smallpic1{
+    width: 40%;
+    height: auto;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 20px;
+    float: left;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.smallpic1 .h2pic1{
+text-transform: capitalize;
+padding-left: 90px;
+margin-top: 200;
+}
+.smallpic1 .h2picc1{
+color: #6094ff;
+padding-left:90px;
+}
+.smallpic1 .imgpic{
+   position: absolute;
+    border-radius: 50%;
+}
+.smallpic1 .ppic1{
+   padding-top: 30px;
+text-transform: capitalize;
+} 
+.contacenty{
+    overflow: hidden;
+}
+/* /football */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 3.9 team section.................................................................. */
+.alll{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.cont_general .player{
+    position: relative;
+    display: block;
+    background-color: rgba(209,202,202,255);
+    width: 28%;
+    height: 300px;
+    float: left;
+   text-align: center;
+   padding: 17px 13px;
+}
+.teampic{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.teamoverlay{
+position: absolute;
+left: 0;
+top: 0;
+width:100%;
+height:98%;
+background-color: rgba(0,0,0,0.7);
+visibility: hidden;
+opacity:0 ;
+}
+.player:hover .teamoverlay{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.teamoverlay a {
+    display: block;
+    width: 40px;
+    height:40px;
+    background-color: #7ba7ff;
+    color:#fff;
+    margin-left: auto;
+}
+.teamoverlay a i{
+    line-height: 40px;
+}
+.teaminfo .teamh22{
+    color:#222;
+    padding:10px 0;
+}
+.teaminfo .teamspp{
+    color:#999;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.teaminfo .ssss{
+    text-transform: capitalize;
+}
+.teamcenter{
+    margin: 0 5%;
+}
+.teampic .timg{
+    width: 100%;
+}
+.player:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top:0;
+    left: 0;
+    background-color: #333;
+    opacity: 0;
+}
+.player:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity:.4;
+    transition: 1s;
+}
+.player:hover .teaminfo .teamh22{
+    color:#fff;
+    transition:  .5s;
+}
+.player:hover .teaminfo .teamspp{
+    color: blue;
+    transition: 1s;}
+    /* /team */
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+    /* 3.10 recent section.............................................................. */
+    .all{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .recentcont{
+        width: 80%;
+        margin: auto;
+        background-color:#f8f8f8;
+        overflow: hidden;
+    }
+    .recentcont .recentfirst{
+        position: relative;
+        width: 30%;
+        height: fit-content;
+        float: left;
+        background-color:white ;
+    }
+    .recentpic{
+        width: 100%;
+        margin-left: 23px;
+    }
+    .recentpic{
+margin: auto;
+    }
+    .tt{
+margin: 0px 5%;
+    }
+    .recentul{
+        list-style: none;
+        margin: 10px 0px;
+    }
+    .recentul li{
+        display: inline-block;
+        font-size: 12px;
+        margin: 0px 5px;
+    }
+    .recentul li i{
+        color: #6094ff;
+    }
+    .recentinfo{
+        padding: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .recenthh{
+        font-weight: bold;
+        margin: 20px 0;
+        margin-bottom: 25px;
+    }
+    .recentpp{
+        color: #999;
+            margin-bottom: 20px;
+            line-height: 1.5;
+    }
+    .recenta{
+        color: #6094ff;
+    }
+    .recentfirst::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: 1s;
+    }
+    .recentfirst:hover::after{
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+        opacity: 0.5;
+        background-color: #6195ff;
+    }
+    /* /recent */
+    /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 3.11 footer section............................................................... */
+    .end{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    background-color: #4c4d52;
+    text-align: center;
+    padding: 60px 0px;
+}
+.endpic{
+  width: 160px;  
+  height: 70px; 
+}
+  .endul{
+      list-style: none;
+  }
+  .endul li{
+      position:relative;
+      display: inline-block;
+      margin: 20px 0.5px;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: #6195ff;
+      color: white;
+      padding-top:10px;
+      z-index: 1;
+  }
+  .endul li::after{
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+      background-color: #0954ec;
+      transition: 1s;
+  }
+  .endul li:hover:after{
+
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      visibility: visible;
+      opacity: 0.7;
+      z-index: -1;
+  }
+  .endul li a{
+      color: white;
+     font-size:30px ; 
+  }
+  .endp{
+text-transform: capitalize;
+color: #999;
+  }
+  /* /footer */
